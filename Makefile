@@ -5,7 +5,7 @@
 ## Login   <lnanaay@epitech.net>
 ## 
 ## Started on  Sat Oct 15 19:14:21 2016 LEBON Nathan
-## Last update Sat Nov 12 12:04:38 2016 Nathan Lebon
+## Last update Sat Nov 12 12:21:23 2016 Nathan Lebon
 ##
 
 
@@ -22,7 +22,7 @@ SRCS		= printf.c		\
 
 OBJS		= $(SRCS:.c=.o)
 
-NAME		= libmy.h
+NAME		= libmy.a
 
 RM		= rm -rf
 

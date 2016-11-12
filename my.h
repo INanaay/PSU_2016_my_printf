@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Nov  8 18:35:30 2016 Nathan Lebon
-** Last update Fri Nov 11 17:46:07 2016 Nathan Lebon
+** Last update Sat Nov 12 12:26:36 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -44,6 +44,7 @@ void	print_long(long);
 void	get_adress(void *);
 void	adress(va_list);
 void	convert_long(unsigned long, unsigned long, char *);
+int	my_printf(char *, ...);
 
 
 #endif

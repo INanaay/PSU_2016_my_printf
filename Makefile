@@ -5,13 +5,20 @@
 ## Login   <lnanaay@epitech.net>
 ## 
 ## Started on  Sat Oct 15 19:14:21 2016 LEBON Nathan
-## Last update Tue Nov  8 10:29:57 2016 Nathan Lebon
+## Last update Sat Nov 12 12:04:38 2016 Nathan Lebon
 ##
 
 
 
-SRCS		= disp_stdarg.c	\
-		  sum_stdarg.c
+SRCS		= printf.c		\
+		  functions.c		\
+		  hex.c			\
+		  my_putnbr_base.c	\
+		  my_putstr.c		\
+		  pointer.c		\
+		  print_octal.c		\
+		  str_oct.c		\
+		  unsigned.c
 
 OBJS		= $(SRCS:.c=.o)
 

@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Nov  8 10:42:01 2016 Nathan Lebon
-** Last update Fri Nov 11 16:56:20 2016 Nathan Lebon
+** Last update Sat Nov 12 12:00:42 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -68,15 +68,5 @@ int		my_printf(char *s, ...)
   flags(tab);
   va_start(valist, s);
   cases(s, valist, 0, tab);
-}
-
-int	main()
-{
-  t_flag tab[25];
-
-  int i;
-  i = 30;
-
-  flags(tab);
-  my_printf("%p", i);
+  return (0);
 }

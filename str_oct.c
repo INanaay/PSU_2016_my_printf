@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Fri Nov 11 17:42:30 2016 Nathan Lebon
-** Last update Fri Nov 11 17:50:33 2016 Nathan Lebon
+** Last update Sat Nov 12 12:05:10 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -27,5 +27,5 @@ void    convert_count(int nbr, int b, char *base, int count)
   convert_count(q, b, base, count + 1);
   if (r < b)
     my_putchar(base[r]);
-  return (count);
+  return;
 }

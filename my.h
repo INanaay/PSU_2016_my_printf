@@ -5,19 +5,18 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Nov  8 18:35:30 2016 Nathan Lebon
-** Last update Sun Nov 13 17:54:25 2016 Nathan Lebon
+** Last update Mon Nov 14 12:17:49 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
 #ifndef MY_H_
 #define MY_H_
 
-typedef struct s_flag t_flag;
-struct	s_flag
+typedef struct s_flag
 {
   char	c;
   void	(*fptr)(va_list);
-};
+}		t_flag;
 
 void	my_putchar_list(va_list);
 void	my_putchar(char);

@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Wed Nov  9 12:29:27 2016 Nathan Lebon
-** Last update Wed Nov  9 17:39:11 2016 Nathan Lebon
+** Last update Mon Nov 14 11:05:12 2016 Nathan Lebon
 */
 
 #include <unistd.h>
@@ -22,10 +22,10 @@ void    my_putchar_list(va_list c)
   my_putchar(va_arg(c, int));
 }
 
-void     print_int(int i)
+void	print_int(int i)
 {
-  char  nb[25];
-  int   j;
+  char	nb[25];
+  int	j;
 
   j = 0;
   if (i == 0)

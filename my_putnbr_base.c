@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Oct 11 11:21:53 2016 LEBON Nathan
-** Last update Fri Nov 11 17:46:33 2016 Nathan Lebon
+** Last update Mon Nov 14 11:09:04 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -47,7 +47,7 @@ void	my_putnbr_base(int nbr)
   b = 2;
   if (nbr < 0)
     my_putchar('-');
-  convert(nbr, b, "01" );
+  convert(nbr, b, "01");
 }
 
 void	my_putnbr_base_list(va_list val)

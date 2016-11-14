@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Wed Nov  9 18:35:41 2016 Nathan Lebon
-** Last update Thu Nov 10 17:20:37 2016 Nathan Lebon
+** Last update Mon Nov 14 11:07:54 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -34,7 +34,7 @@ void    my_putnbr_base_hexl(int nbr)
 
   b = 16;
   nbr = (unsigned int)nbr;
-  convert_hex(nbr, b, "0123456789abcdef" );
+  convert_hex(nbr, b, "0123456789abcdef");
 }
 
 void    my_putnbr_base_list_hexl(va_list val)
@@ -48,7 +48,7 @@ void    my_putnbr_base_hexc(int nbr)
 
   b = 16;
   nbr = (unsigned int)nbr;
-  convert_hex(nbr, b, "0123456789ABCDEF" );
+  convert_hex(nbr, b, "0123456789ABCDEF");
 }
 
 void    my_putnbr_base_list_hexc(va_list val)

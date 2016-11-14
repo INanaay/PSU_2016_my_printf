@@ -5,7 +5,7 @@
 ## Login   <lnanaay@epitech.net>
 ## 
 ## Started on  Sat Oct 15 19:14:21 2016 LEBON Nathan
-## Last update Sat Nov 12 12:21:23 2016 Nathan Lebon
+## Last update Sun Nov 13 17:50:26 2016 Nathan Lebon
 ##
 
 
@@ -18,7 +18,8 @@ SRCS		= printf.c		\
 		  pointer.c		\
 		  print_octal.c		\
 		  str_oct.c		\
-		  unsigned.c
+		  unsigned.c		\
+		  nonp.c
 
 OBJS		= $(SRCS:.c=.o)
 

@@ -5,17 +5,33 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Wed Nov  9 13:42:50 2016 Nathan Lebon
-** Last update Wed Nov  9 16:13:59 2016 Nathan Lebon
+** Last update Mon Nov 14 10:45:22 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
+#include <string.h>
 #include "my.h"
+
+void	print_null()
+{
+  my_putchar('(');
+  my_putchar('n');
+  my_putchar('u');
+  my_putchar('l');
+  my_putchar('l');
+  my_putchar(')');
+}
 
 void	my_putstr(char *s)
 {
   int	i;
 
   i = 0;
+  if (s == NULL)
+    {
+      print_null();
+      return;
+    }
   while (s[i])
     {
       my_putchar(s[i]);

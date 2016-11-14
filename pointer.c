@@ -5,16 +5,16 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Fri Nov 11 16:16:13 2016 Nathan Lebon
-** Last update Fri Nov 11 17:26:48 2016 Nathan Lebon
+** Last update Mon Nov 14 11:13:57 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
 #include "my.h"
 
-void     convert_long(unsigned long nbr, unsigned long b, char *base)
+void			convert_long(unsigned long nbr, unsigned long b, char *base)
 {
-  unsigned long   r;
-  unsigned long   q;
+  unsigned long		r;
+  unsigned long		q;
 
   r = nbr % b;
   q = nbr / b;
@@ -28,16 +28,16 @@ void     convert_long(unsigned long nbr, unsigned long b, char *base)
     my_putchar(base[r]);
 }
 
-void		get_adress(void *c)
+void			get_adress(void *c)
 {
-  unsigned long	i;
-  unsigned long b;
+  unsigned long		i;
+  unsigned long		b;
 
   i = (unsigned long)&c;
   b = 16;
   my_putchar('0');
   my_putchar('x');
-  convert_long(i, b, "0123456789abcdef"); 
+  convert_long(i, b, "0123456789abcdef");
 }
 
 void	adress(va_list valist)

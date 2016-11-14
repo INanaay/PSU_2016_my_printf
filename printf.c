@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Nov  8 10:42:01 2016 Nathan Lebon
-** Last update Sat Nov 12 12:00:42 2016 Nathan Lebon
+** Last update Mon Nov 14 11:21:30 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -13,7 +13,7 @@
 
 int		cases(char *s, va_list valist, int i, t_flag *t)
 {
-  int	j;
+  int		j;
 
   j = 0;
   while (s[i])
@@ -28,7 +28,7 @@ int		cases(char *s, va_list valist, int i, t_flag *t)
 		  t[j].fptr(valist);
 		  break;
 		}
-	      j++;
+	      j = j + 1;
 	    }
 	  j = 0;
 	}
@@ -58,6 +58,7 @@ void    flags(t_flag *t)
   fill_tab('X', &my_putnbr_base_list_hexc, &t[8]);
   fill_tab('u', &print_ui_list, &t[9]);
   fill_tab('p', &adress, &t[10]);
+  fill_tab('S', &get_char, &t[11]);
 }
 
 int		my_printf(char *s, ...)

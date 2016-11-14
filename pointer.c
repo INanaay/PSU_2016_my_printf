@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Fri Nov 11 16:16:13 2016 Nathan Lebon
-** Last update Mon Nov 14 11:13:57 2016 Nathan Lebon
+** Last update Mon Nov 14 16:03:19 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -28,19 +28,17 @@ void			convert_long(unsigned long nbr, unsigned long b, char *base)
     my_putchar(base[r]);
 }
 
-void			get_adress(void *c)
+void			get_adress(unsigned int c)
 {
-  unsigned long		i;
   unsigned long		b;
 
-  i = (unsigned long)&c;
   b = 16;
   my_putchar('0');
   my_putchar('x');
-  convert_long(i, b, "0123456789abcdef");
+  convert_long(c, b, "0123456789abcdef");
 }
 
 void	adress(va_list valist)
 {
-  get_adress(va_arg(valist, void *));
+  get_adress(va_arg(valist, unsigned int));
 }

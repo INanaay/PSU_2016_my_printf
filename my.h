@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Nov  8 18:35:30 2016 Nathan Lebon
-** Last update Mon Nov 14 12:17:49 2016 Nathan Lebon
+** Last update Mon Nov 14 16:08:00 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -36,11 +36,10 @@ void	my_putnbr_base_list_hexc(va_list);
 void	print_unsigned_int(int);
 void	print_ui_list(va_list);
 void	print_uint(unsigned int);
-void     convert(int , int , char *);
+void    convert(int , int , char *);
 void	adress(va_list);
-void	get_adress(void *);
 void	print_long(long);
-void	get_adress(void *);
+void	get_adress(unsigned int);
 void	adress(va_list);
 void	convert_long(unsigned long, unsigned long, char *);
 int	my_printf(char *, ...);

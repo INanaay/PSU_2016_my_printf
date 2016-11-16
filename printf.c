@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Nov  8 10:42:01 2016 Nathan Lebon
-** Last update Mon Nov 14 16:08:49 2016 Nathan Lebon
+** Last update Wed Nov 16 12:21:55 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -21,7 +21,7 @@ int		cases(char *s, va_list valist, int i, t_flag *t)
       if (s[i] == '%')
 	{
 	  i = i + 1;
-	  while (1)
+	  while (j != 13)
 	    {
 	      if (s[i] == t[j].c)
 		{
@@ -30,6 +30,8 @@ int		cases(char *s, va_list valist, int i, t_flag *t)
 		}
 	      j = j + 1;
 	    }
+	  if (j > 12)
+	    return (-1);
 	  j = 0;
 	}
       else
@@ -64,7 +66,7 @@ void    flags(t_flag *t)
 int		my_printf(char *s, ...)
 {
   va_list	valist;
-  t_flag	tab[25];
+  t_flag	tab[13];
 
   flags(tab);
   va_start(valist, s);

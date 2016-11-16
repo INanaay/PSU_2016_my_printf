@@ -5,7 +5,7 @@
 ## Login   <lnanaay@epitech.net>
 ## 
 ## Started on  Sat Oct 15 19:14:21 2016 LEBON Nathan
-## Last update Wed Nov 16 13:06:04 2016 Nathan Lebon
+## Last update Wed Nov 16 13:07:44 2016 Nathan Lebon
 ##
 
 
@@ -30,7 +30,7 @@ RM		= rm -rf
 all:		  $(NAME)
 
 $(NAME):	  $(OBJS)
-		  ar rc $(NAME) *.o
+		  ar rc $(NAME) $(OBJS)
 clean:
 		  $(RM) $(OBJS)
 

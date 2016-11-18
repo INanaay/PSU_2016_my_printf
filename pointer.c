@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Fri Nov 11 16:16:13 2016 Nathan Lebon
-** Last update Mon Nov 14 16:03:19 2016 Nathan Lebon
+** Last update Fri Nov 18 12:47:14 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -21,7 +21,7 @@ void			convert_long(unsigned long nbr, unsigned long b, char *base)
   if (q == 0)
     {
       my_putchar(base[r]);
-      return;
+      return ;
     }
   convert_long(q, b, base);
   if (r < b)
@@ -40,5 +40,10 @@ void			get_adress(unsigned int c)
 
 void	adress(va_list valist)
 {
+  if (va_arg(valist, unsigned int) == 0)
+    {
+      my_putstr("(nil)");
+      return ;
+    }
   get_adress(va_arg(valist, unsigned int));
 }

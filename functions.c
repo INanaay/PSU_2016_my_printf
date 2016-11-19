@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Wed Nov  9 12:29:27 2016 Nathan Lebon
-** Last update Mon Nov 14 11:05:12 2016 Nathan Lebon
+** Last update Sat Nov 19 15:41:12 2016 Nathan Lebon
 */
 
 #include <unistd.h>
@@ -31,7 +31,7 @@ void	print_int(int i)
   if (i == 0)
     {
       my_putchar('0');
-      return;
+      return ;
     }
   if (i < 0)
     {

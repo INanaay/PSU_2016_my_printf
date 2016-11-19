@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Wed Nov  9 18:52:38 2016 Nathan Lebon
-** Last update Fri Nov 11 16:01:43 2016 Nathan Lebon
+** Last update Sat Nov 19 15:52:06 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -20,7 +20,7 @@ void     print_uint(unsigned int i)
   if (i == 0)
     {
       my_putchar('0');
-      return;
+      return ;
     }
   while (i != 0)
     {

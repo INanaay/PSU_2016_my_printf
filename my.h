@@ -5,12 +5,12 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Nov  8 18:35:30 2016 Nathan Lebon
-** Last update Mon Nov 14 16:08:00 2016 Nathan Lebon
+** Last update Fri Nov 18 13:12:50 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
 #ifndef MY_H_
-#define MY_H_
+# define MY_H_
 
 typedef struct s_flag
 {
@@ -46,4 +46,4 @@ int	my_printf(char *, ...);
 void	get_char(va_list);
 void	char_value(char *);
 
-#endif
+#endif /* !MY_H_ */

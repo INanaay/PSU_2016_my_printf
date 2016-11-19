@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Tue Oct 11 11:21:53 2016 LEBON Nathan
-** Last update Mon Nov 14 11:09:04 2016 Nathan Lebon
+** Last update Fri Nov 18 12:31:33 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -33,7 +33,7 @@ void	convert(int nbr, int b, char *base)
   if (q == 0)
     {
       my_putchar(base[r]);
-      return;
+      return ;
     }
   convert(q, b, base);
   if (r < b)

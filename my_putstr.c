@@ -5,7 +5,7 @@
 ** Login   <lnanaay@epitech.net>
 ** 
 ** Started on  Wed Nov  9 13:42:50 2016 Nathan Lebon
-** Last update Mon Nov 14 10:45:22 2016 Nathan Lebon
+** Last update Fri Nov 18 12:32:15 2016 Nathan Lebon
 */
 
 #include <stdarg.h>
@@ -30,7 +30,7 @@ void	my_putstr(char *s)
   if (s == NULL)
     {
       print_null();
-      return;
+      return ;
     }
   while (s[i])
     {
